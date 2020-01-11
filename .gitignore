@@ -1,21 +1,26 @@
-**/target/
-**/mylogs/
+/target/
+/bin/
+!.mvn/wrapper/maven-wrapper.jar
 
-# IntelliJ project files
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
 .idea
+*.iws
 *.iml
-**/out
+*.ipr
 
-# Eclipse project files
-**/.classpath
-**/.project
-**/.settings/
-**/bin/
-
-# gradle
-.gradle
-**/build
-
-# MacOS
-.DS_Store
-
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
