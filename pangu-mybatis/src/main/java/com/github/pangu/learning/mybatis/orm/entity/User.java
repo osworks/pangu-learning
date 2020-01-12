@@ -1,4 +1,4 @@
-package com.github.pangu.learning.mybatis.entity;
+package com.github.pangu.learning.mybatis.orm.entity;
 
 import lombok.Data;
 import lombok.experimental.Accessors;

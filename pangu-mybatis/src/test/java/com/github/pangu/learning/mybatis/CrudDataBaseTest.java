@@ -11,8 +11,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.github.pangu.common.util.Maps;
-import com.github.pangu.learning.mybatis.entity.User;
-import com.github.pangu.learning.mybatis.mapper.UserMapper;
+import com.github.pangu.learning.mybatis.orm.entity.User;
+import com.github.pangu.learning.mybatis.orm.mapper.UserMapper;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

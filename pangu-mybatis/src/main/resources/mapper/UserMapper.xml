@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.github.pangu.learning.mybatis.mapper.UserMapper">
+<mapper namespace="com.github.pangu.learning.mybatis.orm.handmapper.MyUserMapper">
 	
-	<select id="rowBoundList" resultType="com.github.pangu.learning.mybatis.entity.User">
-		select * from user
-		<where>
-			<if test="name!=null and name!=''">
-				name like #{name}
-			</if>
-		</where>
-	</select>
+    <select id="mySelectPageByMap" resultType="com.github.pangu.learning.mybatis.orm.entity.User">
+        select * from user
+        <where>
+            <if test="map.name!=null and map.name!=''">
+                name like #{map.name}||'%'
+            </if>
+        </where>
+    </select>
+    
+   <select id="mySelectPageByMap2" resultType="Map">
+        select id as myId, name as myName from user
+        <where>
+            <if test="map.name!=null and map.name!=''">
+                name like #{map.name}||'%'
+            </if>
+        </where>
+    </select>
+
+    <select id="mySelectByMap" resultType="com.github.pangu.learning.mybatis.orm.entity.User">
+        select * from user
+        <where>
+            <if test="name!=null and name!=''">
+                name like #{name}||'%'
+            </if>
+        </where>
+    </select>
+    
 </mapper>
