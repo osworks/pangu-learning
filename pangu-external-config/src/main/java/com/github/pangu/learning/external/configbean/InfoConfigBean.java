@@ -1,16 +1,19 @@
 package com.github.pangu.learning.external.configbean;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Component;
+import lombok.Data;
 
-//这种方式不能实时刷新
+@Data
+@RefreshScope
 @Component
 public class InfoConfigBean {
 	
 	@Value("${bankcard.id:''}")
-	public String id;
+	private String id;
 	
 	@Value("${bankcard.name:''}")
-	public String name;
+	private String name;
 	
 }

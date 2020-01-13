@@ -16,7 +16,7 @@ public class ConfigController2 {
 
 	@GetMapping("user")
 	public String user() {
-		String outString = StrUtil.format("卡号: {}，姓名: {}", infoConfigBean.id, infoConfigBean.name);
+		String outString = StrUtil.format("卡号: {}，姓名: {}", infoConfigBean.getId(), infoConfigBean.getName());
 		return outString;
 	}
 }
