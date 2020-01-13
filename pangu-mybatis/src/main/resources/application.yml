@@ -7,6 +7,10 @@ spring:
     url: jdbc:mysql://localhost:3306/pangu-learning?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false&allowMultiQueries=true&useSSL=false
     username: root
     password: root
+  
+mybatis-plus:
+  mapperLocations: classpath*:mapper/*Mapper.xml
+  typeAliasesPackage: com.github.pangu.learning.mybatis.orm.entity
 
 logging:
   level:
