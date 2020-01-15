@@ -10,9 +10,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import com.github.pangu.common.util.Maps;
 import com.github.pangu.learning.mybatis.orm.entity.User;
 import com.github.pangu.learning.mybatis.orm.mapper.UserMapper;
+import com.github.pangu.toolbox.util.Maps;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
