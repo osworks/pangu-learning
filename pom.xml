@@ -20,6 +20,7 @@
 	<modules>
 		<module>pangu-mybatis</module>
 		<module>pangu-external-config</module>
+		<module>pangu-discovery-http-provider</module>
 	</modules>
 
 	<dependencyManagement>
