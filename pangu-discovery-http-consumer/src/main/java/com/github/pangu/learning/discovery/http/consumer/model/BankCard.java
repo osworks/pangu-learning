@@ -1,4 +1,4 @@
-package com.gitee.myclouds.examples.discovery.provider.model;
+package com.github.pangu.learning.discovery.http.consumer.model;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

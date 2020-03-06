@@ -1,4 +1,4 @@
-package com.gitee.myclouds.examples.discovery.provider.controller;
+package com.github.pangu.learning.discovery.http.provider.controller;
 
 import java.math.BigDecimal;
 
@@ -9,8 +9,7 @@ import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.gitee.myclouds.examples.discovery.provider.model.BankCard;
+import com.github.pangu.learning.discovery.http.provider.model.BankCard;
 
 /**
  * 银行卡服务

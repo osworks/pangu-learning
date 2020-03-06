@@ -21,6 +21,7 @@
 		<module>pangu-mybatis</module>
 		<module>pangu-external-config</module>
 		<module>pangu-discovery-http-provider</module>
+		<module>pangu-discovery-http-consumer</module>
 	</modules>
 
 	<dependencyManagement>
