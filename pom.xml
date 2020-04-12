@@ -11,7 +11,7 @@
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.github.pangu.learning</groupId>
+	<groupId>com.github.osworks</groupId>
 	<artifactId>pangu-learning</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0.0</version>
@@ -20,27 +20,12 @@
 	<modules>
 		<module>pangu-mybatis</module>
 		<module>pangu-external-config</module>
-		<module>pangu-discovery-http-provider</module>
-		<module>pangu-discovery-http-consumer</module>
+		<module>pangu-discovery-dubbo-provider</module>
+		<module>pangu-discovery-dubbo-consumer</module>
 	</modules>
 
 	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-dependencies</artifactId> 
-				<version>Hoxton.SR3</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>com.alibaba.cloud</groupId>
-				<artifactId>spring-cloud-alibaba-dependencies</artifactId>
-				<version>2.2.0.RELEASE</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
+
 	</dependencyManagement>
 
 	<dependencies>
