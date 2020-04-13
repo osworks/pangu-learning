@@ -1,5 +1,6 @@
-package com.github.osworks.pangu.learning.external;
+package com.github.osworks.pangu.learning.discovery.dubbo.provider;
 
+import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
@@ -7,12 +8,13 @@ import com.github.osworks.pangu.common.boot.PanguApp;
 import com.github.osworks.pangu.common.boot.PanguAppType;
 
 @SpringBootApplication
-@NacosPropertySource(dataId = "${nacos.config.data-id}", autoRefreshed = true)
 @ComponentScan({"com.github.osworks.pangu"})
-public class ConfigApplication {
+@EnableDubbo
+@NacosPropertySource(dataId = "${nacos.config.data-id}", autoRefreshed = true)
+public class DubboProviderApplication {
 
 	public static void main(String[] args) {
-	    PanguApp.run(ConfigApplication.class, PanguAppType.WEBSERVLET, args);
+		PanguApp.run(DubboProviderApplication.class, PanguAppType.WEBNONE, args);
 	}
 
 }

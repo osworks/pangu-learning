@@ -1,8 +1,8 @@
-package com.github.pangu.learning.discovery.dubbo.provider.service;
+package com.github.osworks.pangu.learning.discovery.dubbo.provider.service;
 
 import org.apache.dubbo.config.annotation.Service;
-import com.github.pangu.learning.discovery.dubbo.api.model.BankCard;
-import com.github.pangu.learning.discovery.dubbo.api.service.BankCardService;
+import com.github.osworks.pangu.learning.discovery.dubbo.api.model.BankCard;
+import com.github.osworks.pangu.learning.discovery.dubbo.api.service.BankCardService;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
