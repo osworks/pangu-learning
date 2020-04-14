@@ -12,7 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 @RequestMapping("config")
 public class ConfigController {
 
-	@NacosValue(value = "${bankcard.id}", autoRefreshed = true)
+	@NacosValue(value = "${bankcard.id:default}", autoRefreshed = true)
 	private String id;
 	@NacosValue(value = "${bankcard.name}", autoRefreshed = true)
 	private String name;
