@@ -12,7 +12,7 @@ import com.github.osworks.pangu.common.boot.PanguAppType;
 public class DubboProviderApplication {
 
 	public static void main(String[] args) {
-		PanguApp.run(DubboProviderApplication.class, PanguAppType.WEBSERVLET, args);
+		PanguApp.run(DubboProviderApplication.class, PanguAppType.WEBNONE, args);
 	}
 
 }
