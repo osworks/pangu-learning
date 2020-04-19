@@ -60,7 +60,7 @@
 		<dependency>
 			<groupId>com.github.osworks</groupId>
 			<artifactId>pangu-common</artifactId>
-			<version>4.0.2</version>
+			<version>4.1.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
