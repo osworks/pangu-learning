@@ -23,7 +23,7 @@ public class DubboConsumerApplication {
 	    PanguApp.run(DubboConsumerApplication.class, PanguAppType.WEBNONE, args);
 	}
 	
-	@Reference(version = "1.0.0", check = false)
+	@Reference(version = "1.0.0", check = false, group = "pangu-discovery-dubbo-provider")
 	private BankCardService bankCardService;
 	
     @Scheduled(fixedRate = 3000)

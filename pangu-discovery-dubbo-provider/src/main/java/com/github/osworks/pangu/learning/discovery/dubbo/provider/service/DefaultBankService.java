@@ -6,7 +6,7 @@ import com.github.osworks.pangu.learning.discovery.dubbo.api.service.BankService
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-@Service(version = "1.0.0")
+@Service(version = "1.0.0", group = "pangu-discovery-dubbo-provider")
 public class DefaultBankService implements BankService{
 
     @Override
