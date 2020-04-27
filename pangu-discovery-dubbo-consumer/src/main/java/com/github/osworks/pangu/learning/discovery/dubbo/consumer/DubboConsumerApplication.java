@@ -26,7 +26,7 @@ public class DubboConsumerApplication {
 	@Reference(version = "1.0.0", check = false, group = "pangu-discovery-dubbo-provider")
 	private BankCardService bankCardService;
 	
-    @Scheduled(fixedRate = 3000)
+    @Scheduled(fixedDelay = 3000)
     public void callService() throws Exception {
         BankCard bankCard = bankCardService.findCardInfo("530102");
         log.info(bankCard.toString());
