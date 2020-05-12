@@ -3,16 +3,18 @@ package com.github.pangu.learning.mybatis;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import com.github.osworks.pangu.toolbox.util.Maps;
 import com.github.pangu.learning.mybatis.orm.entity.User;
 import com.github.pangu.learning.mybatis.orm.mapper.UserMapper;
+import com.github.pangu.toolbox.util.Maps;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

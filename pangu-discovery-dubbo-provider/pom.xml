@@ -63,6 +63,11 @@
 			<artifactId>pangu-common</artifactId>
 			<version>4.1.0</version>
 		</dependency>
+		<dependency>
+			<groupId>com.github.osworks</groupId>
+			<artifactId>pangu-toolbox</artifactId>
+			<version>4.1.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>

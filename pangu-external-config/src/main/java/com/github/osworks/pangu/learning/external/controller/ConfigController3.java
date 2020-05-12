@@ -4,9 +4,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import com.github.osworks.pangu.learning.external.orm.entity.User;
 import com.github.osworks.pangu.learning.external.service.UserService;
-import com.github.osworks.pangu.toolbox.util.Asserts;
+import com.github.pangu.toolbox.util.Asserts;
 
 @RestController
 @RequestMapping("config3")

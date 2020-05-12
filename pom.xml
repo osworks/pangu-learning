@@ -23,6 +23,7 @@
 		<module>pangu-discovery-dubbo-provider</module>
 		<module>pangu-discovery-dubbo-consumer</module>
 		<module>pangu-gateway</module>
+		<module>pangu-discovery-dubbo-api</module>
 	</modules>
 
 	<dependencyManagement>
